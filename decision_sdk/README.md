@@ -1,5 +1,19 @@
 # Judgment SDK
 
+**Judgment Gate is the only executable authority in this system.**
+
+---
+
+## What This SDK Does NOT Do
+
+- Does NOT execute judgment
+- Does NOT hold authority
+- Does NOT terminate execution
+
+**This SDK returns signals (ALLOW/HOLD/ESCALATE). Enforcement is external.**
+
+---
+
 ## 3-Minute Quick Start
 
 ### Before SDK

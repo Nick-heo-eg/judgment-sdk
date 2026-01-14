@@ -1,4 +1,6 @@
-# Responsible AI SDK
+# Judgment SDK
+
+**Judgment Gate is the only executable authority in this system.**
 
 ## 당신이 지금 이 문서를 열고 있는 이유
 

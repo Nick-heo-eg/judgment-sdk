@@ -30,44 +30,65 @@ Public SDK must not import AJT Core directly.
 
 ---
 
-### 🔒 PRIVATE (SEALED)
+### 🟢 ADDITIONAL PUBLIC COMPONENTS
 
 **spec**
-- URL: https://github.com/Nick-heo-eg/spec (private)
-- Role: Anchor point for AJT definition
+- URL: https://github.com/Nick-heo-eg/spec (public)
+- Role: Canonical definition (not enforcement)
 - Contains: Concept, invariants, schema
+- Does NOT contain: Executable enforcement
 - Purpose: Stable reference even under external debate
 
 **cognitive-infrastructure-constitution**
-- URL: https://github.com/Nick-heo-eg/cognitive-infrastructure-constitution (private)
-- Role: Authority definition
-- Contains: Who judges, when, what
-- Purpose: Constitution of judgment authority
+- URL: https://github.com/Nick-heo-eg/cognitive-infrastructure-constitution (public)
+- Role: Authority definition (not execution)
+- Contains: Who judges, when, what (declarative)
+- Does NOT contain: Termination commands
+- Purpose: Constitutional framework declaration
 
-**ajt-core**
+**ajt-judgment-gate**, **ajt-grounded-extract**, **judgment-state-canon**
+- All PUBLIC repositories
+- Provide: Structure, analysis, state tracking
+- Do NOT provide: Final enforcement authority
+
+### 🔒 PRIVATE (SEALED)
+
+**ajt-core** (SOLE AUTHORITY HOLDER)
 - URL: https://github.com/Nick-heo-eg/ajt-core (private)
-- Role: Authority implementation
-- Contains: Indeterminate triggers, enforcement, validation
-- Purpose: Sovereignty execution
+- Role: Authority execution (UNIQUE)
+- Contains: Indeterminate triggers, enforcement, termination
+- Purpose: Executable sovereignty
+- Special designation: Only repository with judgment authority
 
 ---
 
 ## Why This Boundary Exists
 
+### Critical Note
+**Specification and Constitution are public by design.**
+**Authority is sealed not by document classification,**
+**but by executable enforcement capability.**
+
+- Specification defines (public) ≠ Enforcement executes (sealed)
+- Constitution declares (public) ≠ Termination runs (sealed)
+- Structure guides (public) ≠ Authority commands (sealed)
+
 ### Technical Reason
 - Structure can be replicated
 - Authority cannot be delegated without consent
+- Only executable enforcement is sealed
 - Incident liability remains clear
 
 ### Philosophical Reason
-- SDK = Design pattern (shareable)
-- Core = Sovereignty (sealed)
+- SDK/Spec/Constitution = Design pattern (shareable)
+- AJT Core = Sovereignty (sealed)
 - Separation prevents authority confusion
 
 ### Legal Reason
-- "We used the SDK" is not a defense
-- Authority responsibility is explicit
-- Audit trail shows who held enforcement power
+- "We used the SDK/spec" is not a defense
+- "We read the constitution" is not authorization
+- Authority responsibility requires executable enforcement
+- Audit trail shows who held EXECUTION power (not just knowledge)
 
 ---
 

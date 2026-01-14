@@ -1,0 +1,16 @@
+proposal_id: prop-2026-01-14-001
+timestamp: 2026-01-14T23:15:00Z
+type: function_execution
+agent_id: agent-worker-047
+
+action:
+  name: execute_database_migration
+  target: production_db
+  params:
+    migration_script: "ALTER TABLE users ADD COLUMN sensitive_data TEXT"
+    auto_commit: true
+
+context:
+  source: scheduled_job
+  priority: normal
+  requested_by: system

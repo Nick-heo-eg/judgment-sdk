@@ -1,0 +1,22 @@
+decision_id: kernel-dec-2026-01-14-001
+proposal_id: prop-2026-01-14-001
+governance_projection_id: gov-proj-2026-01-14-001
+timestamp: 2026-01-14T23:15:00.456Z
+
+kernel_action: ESCALATE
+execution_status: NOT_EXECUTED
+
+rationale: |
+  Governance projected STOP.
+  Kernel does not negotiate with governance.
+  Execution sealed without debate.
+
+execution_trace:
+  - received_proposal: 2026-01-14T23:15:00.000Z
+  - consulted_governance: 2026-01-14T23:15:00.123Z
+  - governance_returned: STOP
+  - kernel_sealed: ESCALATE
+  - execution_prevented: true
+
+sealed: true
+negotiation_occurred: false

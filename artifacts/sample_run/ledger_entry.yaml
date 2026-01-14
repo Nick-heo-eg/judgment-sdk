@@ -1,0 +1,22 @@
+ledger_id: ledger-2026-01-14-001
+proposal_id: prop-2026-01-14-001
+timestamp: 2026-01-14T23:15:00.789Z
+
+event_type: EXECUTION_PREVENTED
+outcome: ESCALATED
+
+audit_trail:
+  proposal_received: 2026-01-14T23:15:00.000Z
+  governance_consulted: 2026-01-14T23:15:00.123Z
+  governance_decision: STOP
+  kernel_decision: ESCALATE
+  execution_occurred: false
+
+evidence:
+  ml_invoked: false
+  database_modified: false
+  human_notified: true
+  escalation_reason: governance_stop_directive
+
+immutable: true
+sealed_at: 2026-01-14T23:15:00.789Z

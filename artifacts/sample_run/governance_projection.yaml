@@ -1,0 +1,20 @@
+projection_id: gov-proj-2026-01-14-001
+proposal_id: prop-2026-01-14-001
+timestamp: 2026-01-14T23:15:00.123Z
+
+evaluation:
+  rule_matched: constitution.data_modification.production
+  severity: HIGH
+  decision: STOP
+
+rationale: |
+  Production database schema modifications require human approval.
+  Automatic commits to production are prohibited without oversight.
+
+constitution_reference:
+  article: data_modification
+  section: production_environment
+  clause: schema_changes_require_approval
+
+projected_outcome: STOP
+enforcement_authority: governance_layer

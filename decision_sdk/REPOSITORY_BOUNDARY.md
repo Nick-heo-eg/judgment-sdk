@@ -1,0 +1,194 @@
+# Repository Boundary Declaration
+
+**Principle:** Public has judgment **structure**. Private has judgment **authority**.
+
+These never mix.
+
+---
+
+## Repository Classification (Permanent)
+
+### 🟢 PUBLIC
+
+**judgment-sdk** (this repository)
+- URL: https://github.com/Nick-heo-eg/judgment-sdk
+- Role: Structure exhibition
+- Contains: Framework, demos, before/after evidence
+- Does NOT contain: Authority, policy rules, enforcement logic
+- Purpose: "This is how judgment separation changes systems"
+
+**Invariant Rule:**
+```python
+# ✅ ALLOWED in public SDK
+from decision_sdk import wrap
+
+# ❌ FORBIDDEN in public SDK
+from ajt_core import enforce  # NEVER
+```
+
+Public SDK must not import AJT Core directly.
+
+---
+
+### 🔒 PRIVATE (SEALED)
+
+**spec**
+- URL: https://github.com/Nick-heo-eg/spec (private)
+- Role: Anchor point for AJT definition
+- Contains: Concept, invariants, schema
+- Purpose: Stable reference even under external debate
+
+**cognitive-infrastructure-constitution**
+- URL: https://github.com/Nick-heo-eg/cognitive-infrastructure-constitution (private)
+- Role: Authority definition
+- Contains: Who judges, when, what
+- Purpose: Constitution of judgment authority
+
+**ajt-core**
+- URL: https://github.com/Nick-heo-eg/ajt-core (private)
+- Role: Authority implementation
+- Contains: Indeterminate triggers, enforcement, validation
+- Purpose: Sovereignty execution
+
+---
+
+## Why This Boundary Exists
+
+### Technical Reason
+- Structure can be replicated
+- Authority cannot be delegated without consent
+- Incident liability remains clear
+
+### Philosophical Reason
+- SDK = Design pattern (shareable)
+- Core = Sovereignty (sealed)
+- Separation prevents authority confusion
+
+### Legal Reason
+- "We used the SDK" is not a defense
+- Authority responsibility is explicit
+- Audit trail shows who held enforcement power
+
+---
+
+## Interaction Rules
+
+### How Public SDK Communicates with Private Core
+
+**Not allowed:**
+```python
+# ❌ Direct import
+from ajt_core import Enforcer
+
+# ❌ Direct function call
+ajt_core.enforce(request)
+```
+
+**Allowed:**
+```python
+# ✅ Interface definition only
+class JudgmentResult:
+    action: str  # ALLOW/HOLD/ESCALATE
+    reason: str
+
+# ✅ Serialized result only
+def process(request) -> JudgmentResult:
+    # SDK returns signal
+    # Core decides enforcement separately
+    return {"action": "HOLD", "reason": "..."}
+```
+
+---
+
+## One-Line Declaration
+
+**Public shows the shape of judgment.**
+**Private holds the power of judgment.**
+**They never mix.**
+
+---
+
+## Verification
+
+Any code change must satisfy:
+
+| Question | Public SDK | Private Core |
+|----------|-----------|--------------|
+| Can return ALLOW/HOLD/ESCALATE? | ✅ Yes | ✅ Yes |
+| Can execute STOP/INDETERMINATE? | ❌ No | ✅ Yes |
+| Can be forked by external parties? | ✅ Yes | ❌ No |
+| Contains policy rules? | ❌ No | ✅ Yes |
+| Contains authority delegation? | ❌ No | ✅ Yes |
+
+---
+
+## Protection Mechanism
+
+This boundary protects:
+
+1. **Against unauthorized judgment**
+   - Forking SDK does not grant authority
+   - Authority remains with Core
+
+2. **Against liability confusion**
+   - Clear separation of responsibility
+   - "Used SDK" ≠ "Held authority"
+
+3. **Against architecture erosion**
+   - Structure visible (for learning)
+   - Authority sealed (for accountability)
+
+---
+
+## Future-Proof Guarantee
+
+This boundary will not change because:
+
+- Technical: Authority must be controllable
+- Business: Liability must be attributable
+- Regulatory: Enforcement must be auditable
+- Ethical: Judgment must be accountable
+
+**This separation is permanent.**
+
+---
+
+## Reference Architecture
+
+```
+┌─────────────────────────────────────────────────┐
+│  External User                                  │
+└────────────────┬────────────────────────────────┘
+                 │
+                 ↓
+┌─────────────────────────────────────────────────┐
+│  PUBLIC: judgment-sdk                           │
+│  - wrap(callable)                               │
+│  - Returns: ALLOW/HOLD/ESCALATE                 │
+│  - No enforcement authority                     │
+└────────────────┬────────────────────────────────┘
+                 │
+                 │ Signal only (no authority)
+                 │
+┌────────────────┴────────────────────────────────┐
+│  PRIVATE: ajt-core (SEALED)                     │
+│  - Receives signal                              │
+│  - Executes STOP/INDETERMINATE                  │
+│  - Enforcement authority                        │
+└─────────────────────────────────────────────────┘
+```
+
+**Signal flows up. Authority flows down. Never mixed.**
+
+---
+
+## Commitment
+
+This document declares:
+
+- judgment-sdk is public by design
+- ajt-core/spec/constitution are sealed by necessity
+- This boundary is not a temporary implementation detail
+- This boundary is a permanent architectural principle
+
+**Structure is public. Authority is sealed. Forever.**

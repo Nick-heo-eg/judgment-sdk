@@ -1,5 +1,7 @@
 # Judgment SDK
 
+**This system is organized by accessibility, but authority exists in exactly one place.**
+
 **Judgment Gate is the only executable authority in this system.**
 
 ## 당신이 지금 이 문서를 열고 있는 이유

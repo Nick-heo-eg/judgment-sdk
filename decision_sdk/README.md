@@ -1,6 +1,6 @@
 # Judgment SDK
 
-## 3분 내 실행 가이드
+## 3-Minute Quick Start
 
 ### Before SDK
 ```bash
@@ -15,7 +15,7 @@ python3 before.py
 python3 after.py
 ```
 
-**Result:** <100% ML calls, decision depth reduced, full audit trail
+**Result:** <100% ML calls, judgment depth reduced, full audit trail
 
 ### Compare
 ```bash
@@ -26,17 +26,17 @@ python3 compare.py
 
 ---
 
-## 당신이 지금 이 문서를 열고 있는 이유
+## Why You're Reading This
 
-밤에 장애 알람이 울렸습니다.
+The incident alarm went off at night.
 
-"왜 이 요청에서 이런 결과가 나왔죠?"
+"Why did this request return this result?"
 
-로그는 있습니다.
-하지만 **누가 판단했는지**는 없습니다.
+You have logs.
+But **who made the judgment** is missing.
 
-다음 사고가 나면, 당신이 설명해야 합니다.
-지금은 증거가 없습니다.
+When the next incident happens, you'll have to explain.
+Right now, you have no evidence.
 
 ---
 

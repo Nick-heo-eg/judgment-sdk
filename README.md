@@ -8,6 +8,9 @@
 2. **`docs/WHY_LOGS_ARE_NOT_EVIDENCE.md`**
    — Why traditional logging fails post-incident responsibility
 
+3. **`docs/WHY_UI_LEVEL_SAFETY_FAILS_AUDITS.md`**
+   — Why output filtering cannot satisfy audit requirements
+
 These documents define the interpretation boundary for this repository.
 
 ---

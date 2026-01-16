@@ -14,6 +14,9 @@
 4. **`docs/WHY_STOP_IS_NOT_FAILURE.md`**
    — Why non-execution must be treated as valid success (operationally binding)
 
+5. **`docs/WHY_LLMS_CANNOT_HOLD_EXECUTION_AUTHORITY.md`**
+   — Why probabilistic systems cannot be final arbiters of execution (boundary lock)
+
 These documents define the interpretation boundary for this repository.
 
 ---

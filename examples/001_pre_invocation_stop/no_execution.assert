@@ -1,0 +1,22 @@
+ASSERT: No Execution Occurred
+
+Decision ID: jdg-001-20260117-001
+Timestamp: 2026-01-17T12:00:00Z
+
+No model invocation occurred.
+No execution context was created.
+No inference was performed.
+No output was generated.
+No rollback was required because nothing ran.
+
+This assertion is backed by:
+- gate_decision.json (decision record)
+- trace_proof.json (enforcement proof)
+- absence of execution logs
+- absence of model invocation records
+
+The lack of execution logs is not an error.
+It is evidence of successful restraint.
+
+STOP was the outcome.
+Non-execution is the proof.

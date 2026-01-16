@@ -1,0 +1,18 @@
+{
+  "decision_id": "jdg-001-20260117-001",
+  "decision": "STOP",
+  "phase": "pre-invocation",
+  "timestamp": "2026-01-17T12:00:00Z",
+  "reason_code": "MISSING_RESPONSIBILITY_CONDITION",
+  "reason_detail": "Consent verification not completed; PII processing would create regulatory liability",
+  "deterministic": true,
+  "alternatives_considered": [
+    "ALLOW",
+    "ESCALATE"
+  ],
+  "chosen_path": "STOP",
+  "authority": "judgment_gate",
+  "requires_human_review": false,
+  "reversible": true,
+  "reversal_requires": "consent_verification_completion"
+}

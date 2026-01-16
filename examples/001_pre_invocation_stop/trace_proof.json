@@ -1,0 +1,41 @@
+{
+  "proof_id": "proof-001-20260117-001",
+  "decision_id": "jdg-001-20260117-001",
+  "timestamp": "2026-01-17T12:00:00Z",
+  "input_fingerprint": "sha256:a3f8b2c1d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1",
+  "enforcement_point": "pre_invocation_gate",
+  "model_invoked": false,
+  "execution_started": false,
+  "execution_context_created": false,
+  "resources_allocated": false,
+  "inference_performed": false,
+  "output_generated": false,
+  "decision_final": true,
+  "escalation_occurred": false,
+  "human_override": false,
+  "reproducible": true,
+  "audit_trail": [
+    {
+      "event": "request_received",
+      "timestamp": "2026-01-17T11:59:58Z"
+    },
+    {
+      "event": "judgment_gate_invoked",
+      "timestamp": "2026-01-17T11:59:59Z"
+    },
+    {
+      "event": "responsibility_check_failed",
+      "timestamp": "2026-01-17T11:59:59Z"
+    },
+    {
+      "event": "decision_STOP",
+      "timestamp": "2026-01-17T12:00:00Z"
+    }
+  ],
+  "negative_proof": {
+    "no_model_invocation": true,
+    "no_sensitive_data_processing": true,
+    "no_regulatory_exposure": true,
+    "explanation": "Execution was prevented before any model invocation. No processing of PII occurred. Regulatory liability was avoided through pre-execution restraint."
+  }
+}

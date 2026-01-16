@@ -1,5 +1,12 @@
 > This repository must be interpreted through `docs/JUDGMENT_OS_OVERVIEW.md`.
 
+## External Declaration
+
+For the external position statement defining what Judgment OS is and why it exists:
+
+- **Judgment OS — An Execution Boundary for Responsible AI**
+  https://github.com/Nick-heo-eg/echo-os-public/blob/main/JUDGMENT_OS.md
+
 ## Interpretation Order
 
 1. **`docs/JUDGMENT_OS_OVERVIEW.md`**

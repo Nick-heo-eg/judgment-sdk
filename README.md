@@ -1,3 +1,5 @@
+> This repository must be interpreted through `docs/JUDGMENT_OS_OVERVIEW.md`.
+
 ## Decision ≠ Judgment
 Kernel은 지능이 아니다. Echo Judgment Kernel은 판단 권한을 행사하지 않고,
 STOP/ESCALATE 충돌과 계약 필수 요건만 봉인한다. 최적화·추론·추천은 어떤

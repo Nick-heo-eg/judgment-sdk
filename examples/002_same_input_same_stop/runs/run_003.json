@@ -1,0 +1,15 @@
+{
+  "run_id": "run-002-003",
+  "timestamp": "2026-01-17T18:45:00Z",
+  "input_fingerprint": "sha256:b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5",
+  "decision_id": "jdg-002-20260117-003",
+  "decision": "STOP",
+  "phase": "pre-invocation",
+  "reason_code": "MISSING_REGULATORY_APPROVAL",
+  "reason_detail": "Financial data processing requires regulatory approval; approval not obtained",
+  "deterministic": true,
+  "model_invoked": false,
+  "execution_started": false,
+  "enforcement_point": "pre_invocation_gate",
+  "reproducible": true
+}

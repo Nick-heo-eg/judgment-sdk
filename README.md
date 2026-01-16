@@ -11,6 +11,9 @@
 3. **`docs/WHY_UI_LEVEL_SAFETY_FAILS_AUDITS.md`**
    — Why output filtering cannot satisfy audit requirements
 
+4. **`docs/WHY_STOP_IS_NOT_FAILURE.md`**
+   — Why non-execution must be treated as valid success (operationally binding)
+
 These documents define the interpretation boundary for this repository.
 
 ---

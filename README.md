@@ -1,5 +1,17 @@
 > This repository must be interpreted through `docs/JUDGMENT_OS_OVERVIEW.md`.
 
+## Interpretation Order
+
+1. **`docs/JUDGMENT_OS_OVERVIEW.md`**
+   — Why this system exists and what it defines
+
+2. **`docs/WHY_LOGS_ARE_NOT_EVIDENCE.md`**
+   — Why traditional logging fails post-incident responsibility
+
+These documents define the interpretation boundary for this repository.
+
+---
+
 ## Decision ≠ Judgment
 Kernel은 지능이 아니다. Echo Judgment Kernel은 판단 권한을 행사하지 않고,
 STOP/ESCALATE 충돌과 계약 필수 요건만 봉인한다. 최적화·추론·추천은 어떤

@@ -1,5 +1,16 @@
 > This repository must be interpreted through `docs/JUDGMENT_OS_OVERVIEW.md`.
 
+## Status: Frozen Canon
+
+This repository is frozen as a canonical reference for judgment-layer architecture.
+
+No further core doctrine development is planned.
+Extensions and applications are documented separately.
+
+Last canonical commit: 74ce94c (2026-01-17)
+
+---
+
 ## External Declaration
 
 For the external position statement defining what Judgment OS is and why it exists:

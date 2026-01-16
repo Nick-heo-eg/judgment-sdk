@@ -24,6 +24,9 @@ For the external position statement defining what Judgment OS is and why it exis
 5. **`docs/WHY_LLMS_CANNOT_HOLD_EXECUTION_AUTHORITY.md`**
    — Why probabilistic systems cannot be final arbiters of execution (boundary lock)
 
+6. **`docs/WHY_DETERMINISM_IS_A_RESPONSIBILITY_CONSTRAINT.md`**
+   — Why responsibility requires reproducible decisions (constraint lock)
+
 These documents define the interpretation boundary for this repository.
 
 ---
